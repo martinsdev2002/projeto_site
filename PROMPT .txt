@@ -1,0 +1,38 @@
+PROJETO SITE MERCADO AUTO PEÇAS
+
+Haja como um desenvolvedor web e produza um site com os seguintes requisitos: 
+
+REQUISITOS: 
+Interface de facil utilização do cliente, facil vizualização
+Deve conter interações com o cliente como perguntas para conhecer mais
+sobre o carro dele como, marca, modelo, ano assim facilitando o atendimento
+do vendedor
+O site deve conter imagens de serviços que são prestados pela empresa e
+de produtos, como instalação de parabrisas, troca de pneus, alinhamento e
+balanceamento, instalação de multimidias, radios, instalação de maçanetas
+Produtos como: pneus, parachoques, parabrisas, maçanetas, suportes de 
+parachoques, paralamas, paineis, almas de aço e etc
+O site deve conter a seguinte logo: 
+O site deve ter somente as cores preta e amarela 
+O site deve ser desenvolvido na seguinte linguagem HTML, CSS e JavaScript.
+O site deve conter categorias que ao cliente criar ele de as seguintes
+opções:
+Produtos: palhetas,pneus, parachoques, parabrisas, maçanetas, suportes de 
+parachoques, paralamas, paineis, almas de aço, lanternas, farois, fechaduras
+latarias em geral 
+serviços: instalação de parabrisas, troca de pneus, alinhamento e
+balanceamento, instalação de multimidias, radios, instalação de maçanetas,
+som, insufilm, troca de bateria
+Auto center: alinhamento e balanceamento, troca de oleo 
+Na interface do site deve conter a seguinte frase bem encaixada em um
+lugar que chame a atencão: " PREÇO JUSTO E SERVIÇO DE QUALIDADE" 
+O site deve conter um direcionamento ao watsap com os contatos do
+vendedores para que o cliente possa ser direcionado ao vendedor que ele quer
+ser atendido. 
+Crie as pastas necessarias para o projeto. 
+Siga somente o que foi pedido nos requisitos
+não faça nada a mais
+sem emojis
+irei utilizar o site feito para apresentar a um Dona de empresa de
+peças automotivas e serviços
+
