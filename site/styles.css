@@ -84,8 +84,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 82px;
-  gap: 1rem;
+  min-height: 58px;
+  gap: 0.5rem;
 }
 
 .brand {
@@ -145,14 +145,15 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
-  min-width: 120px;
-  padding: 0.85rem 1rem;
+  gap: 0.5rem;
+  min-width: 96px;
+  padding: 0.7rem 0.9rem;
   border-radius: 999px;
   border: 1px solid rgba(247, 201, 72, 0.5);
   background: rgba(247, 201, 72, 0.08);
   color: var(--text);
   font-weight: 700;
+  font-size: 0.88rem;
 }
 
 .cart-count {
@@ -956,6 +957,10 @@ button {
     display: grid;
   }
 
+  .brand-logo {
+    width: clamp(110px, 20vw, 180px);
+  }
+
   .trust-grid,
   .benefit-grid,
   .service-grid,
@@ -1004,7 +1009,18 @@ button {
   }
 
   .header-inner {
-    min-height: 74px;
+    min-height: 54px;
+    gap: 0.4rem;
+  }
+
+  .brand-logo {
+    width: 110px;
+  }
+
+  .cart-button {
+    min-width: auto;
+    padding-inline: 0.7rem;
+    font-size: 0.78rem;
   }
 
   .hero {
