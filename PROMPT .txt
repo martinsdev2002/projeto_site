@@ -1,37 +1,46 @@
 PROJETO SITE MERCADO AUTO PEÇAS
 
-Haja como um desenvolvedor web e produza um site com os seguintes requisitos: 
-
-REQUISITOS: 
-Interface de facil utilização do cliente, facil vizualização
-Deve conter interações com o cliente como perguntas para conhecer mais
-sobre o carro dele como, marca, modelo, ano assim facilitando o atendimento
-do vendedor
-O site deve conter imagens de serviços que são prestados pela empresa e
-de produtos, como instalação de parabrisas, troca de pneus, alinhamento e
-balanceamento, instalação de multimidias, radios, instalação de maçanetas
-Produtos como: pneus, parachoques, parabrisas, maçanetas, suportes de 
-parachoques, paralamas, paineis, almas de aço e etc
-O site deve conter a seguinte logo: 
-O site deve ter somente as cores preta e amarela 
-O site deve ser desenvolvido na seguinte linguagem HTML, CSS e JavaScript.
-O site deve conter categorias que ao cliente criar ele de as seguintes
-opções:
-Produtos: palhetas,pneus, parachoques, parabrisas, maçanetas, suportes de 
-parachoques, paralamas, paineis, almas de aço, lanternas, farois, fechaduras
-latarias em geral 
-serviços: instalação de parabrisas, troca de pneus, alinhamento e
-balanceamento, instalação de multimidias, radios, instalação de maçanetas,
-som, insufilm, troca de bateria
-Auto center: alinhamento e balanceamento, troca de oleo 
-Na interface do site deve conter a seguinte frase bem encaixada em um
-lugar que chame a atencão: " PREÇO JUSTO E SERVIÇO DE QUALIDADE" 
-O site deve conter um direcionamento ao watsap com os contatos do
-vendedores para que o cliente possa ser direcionado ao vendedor que ele quer
-ser atendido. 
-Siga somente o que foi pedido nos requisitos
-não faça nada a mais
-sem emojis
-irei utilizar o site feito para apresentar a um Dona de empresa de
-peças automotivas e serviços
-
+Atue como um desenvolvedor web full-stack, UI/UX designer e especialista em landing pages de alta conversão.
+Crie uma landing page para uma loja de acessorios e peças automotivas cujo objetivo é apresentar os produtos e levar o visitante a entrar em contato pelo WhatsApp.
+O público-alvo são homens e mulheres interessados em peças, acessorios e serviços para o seu carro, produtos premium.
+O nome do site é Mercado auto peças e acessorios, a identidade visual deve utilizar preto e amarelo, transmitindo luxo, sofisticação e exclusividade. O design deve ser moderno e minimalista
+A página deve conter Header, Hero principal, seção de benefícios, produtos em destaque, sobre a empresa, chamada para ação e Footer.
+A seção de produtos deve apresentar 6 produtos em cards contendo imagem, nome, descrição curta, preço, preço promocional e botão 'Comprar agora
+A seção de serviços deve conter apresentar 6 serviços que ha na loja como, alinhamento, balanceamento, troca de pneus, troca de oleo, revisões em geral 
+Botão WhatsApp
+Menu funcionando
+Scroll suave
+Formulário
+Links para Instagram
+Botão comprar
+Carrinho
+FAQ expansível
+Modal
+Newsletter
+Animações
+Validação de formulário
+O botão 'Comprar agora' deve direcionar o usuário para o WhatsApp com uma mensagem automática contendo o nome do produto ou o tipo de serviços que o cliente está interessados
+Utilize HTML5, CSS3 e JavaScript puro, caso precise utilize react
+O site deve ser totalmente responsivo, funcionando corretamente em computador, tablet e celular
+Implemente boas práticas básicas de SEO, incluindo title, meta description, headings semânticos, textos alternativos nas imagens e estrutura HTML semântica
+Utilize boas práticas de acessibilidade, incluindo contraste adequado, textos alternativos, labels nos formulários, navegação por teclado e HTML semântico
+Otimize o código para carregamento rápido, evitando bibliotecas desnecessárias e utilizando imagens otimizadas
+Não explique como eu deveria fazer. Faça o projeto. Entregue os arquivos completos e funcionais
+Otimize o projeto para carregamento rápido.
+Evite bibliotecas desnecessárias e código duplicado.
+Não utilize textos genéricos como "Lorem ipsum".
+Crie textos reais e coerentes com o segmento da empresa.
+Caso alguma informação essencial não tenha sido fornecida, utilize informações fictícias claramente identificáveis e fáceis de substituir posteriormente.
+Entregue o projeto completo e funcional.
+Forneça todos os arquivos necessários para executar o site.
+O resultado deve poder ser aberto localmente no navegador e funcionar sem necessidade de alterações no código.
+Antes de finalizar, revise o projeto procurando : Erros de HTML
+Erros de CSS
+Erros de JavaScript
+Links quebrados
+Elementos que não funcionam
+Problemas de responsividade
+Problemas de acessibilidade
+Problemas de layout
+Não entregue apenas uma demonstração visual.
+Quero uma Landing Page funcional, organizada, responsiva e pronta para publicação.

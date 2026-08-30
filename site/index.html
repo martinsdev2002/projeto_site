@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercado Auto Peças e Acessórios</title>
+    <link rel="icon" href="pesquisa.png" type="image/png">
+    <meta
+      name="description"
+      content="Mercado Auto Peças e Acessórios oferece peças, acessórios e serviços automotivos com atendimento rápido e WhatsApp direto para comprar ou solicitar o serviço desejado."
+    />
+    <meta
+      name="keywords"
+      content="Preço justo e serviço de qualidade, é aqui!"
+    />
+    <meta name="theme-color" content="#111111" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand" aria-label="Mercado Auto Peças e Acessórios início">
+          <span class="brand-mark">M</span>
+          <span>Mercado Auto Peças e Acessórios</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Menu principal">
+          <a href="#beneficios">Benefícios</a>
+          <a href="#produtos">Produtos</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#empresa">Sobre</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <button class="cart-button" type="button" aria-label="Abrir carrinho">
+          Carrinho
+          <span class="cart-count" aria-live="polite">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top">
+        <div class="container hero-content">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Acessorios | Serviços para seu veiculo!</p>
+            <h1>Eleve o desempenho do seu veículo com preço justo e serviço de qualidade.</h1>
+            <p class="lead">
+              Oferecemos acessórios, peças automotivas e serviços especializados para quem
+              busca confiança, durabilidade e acabamento impecável.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#produtos">Ver catálogo</a>
+              <a
+                class="btn btn-secondary"
+                href="https://api.whatsapp.com/send/?phone=551637024131&text&type=phone_number&app_absent=0&utm_source=ig"
+                target="_blank"
+                rel="noreferrer"
+                >Falar no WhatsApp</a
+              >
+              <button class="btn btn-secondary" type="button" data-open-modal="true">Receber desconto</button>
+            </div>
+            <ul class="hero-metrics" aria-label="Nossos diferenciais">
+              <li><strong>+10 mil</strong><span>itens vendidos</span></li>
+              <li><strong>4.9/5</strong><span>avaliação</span></li>
+              <li><strong>Entrega</strong><span>rápida</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal" aria-label="Imagem de veículo premium">
+            <div class="image-shell">
+              <img
+                src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80"
+                alt="Carro premium em showroom com visual sofisticado"
+              />
+            </div>
+            <div class="floating-card floating-card-top">
+              <span class="card-tag">Mais vendido</span>
+              <strong>Kit de Freio + Disco</strong>
+              <span>R$ 1.249</span>
+            </div>
+            <div class="floating-card floating-card-bottom">
+              <span class="card-tag success">Atendimento</span>
+              <strong>WhatsApp em até 5 min</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-bar" aria-label="Principais diferenciais da loja">
+        <div class="container trust-grid reveal">
+          <div class="trust-item">
+            <span class="trust-icon" aria-hidden="true">🚚</span>
+            <div>
+              <strong>Entrega em 24h</strong>
+              <small>Para pedidos selecionados</small>
+            </div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon" aria-hidden="true">🛡️</span>
+            <div>
+              <strong>Garantia e serviço de qualidade</strong>
+              <small>Produtos com qualidade comprovada</small>
+            </div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon" aria-hidden="true">💬</span>
+            <div>
+              <strong>Atendimento rápido</strong>
+              <small>Resposta em minutos pelo WhatsApp</small>
+            </div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon" aria-hidden="true">💳</span>
+            <div>
+              <strong>Pagamento fácil</strong>
+              <small>Parcelamento e suporte personalizado</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits" id="beneficios">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Por que escolher a Mercado Auto</p>
+            <h2>Qualidade que faz a diferença na estrada.</h2>
+          </div>
+
+          <div class="benefit-grid">
+            <article class="benefit-card reveal">
+              <div class="icon" aria-hidden="true">✓</div>
+              <h3>Produtos de alta qualidade.</h3>
+              <p>Peças de alto desempenho e acabamento especializado para qualquer veiculo.</p>
+            </article>
+            <article class="benefit-card reveal">
+              <div class="icon" aria-hidden="true">⚡</div>
+              <h3>Atendimento ágil</h3>
+              <p>Equipe especializada com rápido atendimento e orientação personalizada.</p>
+            </article>
+            <article class="benefit-card reveal">
+              <div class="icon" aria-hidden="true">🔧</div>
+              <h3>Serviços completos</h3>
+              <p>Alinhamento, balanceamento, revisão e manutenção com tecnologia e precisão.</p>
+            </article>
+            <article class="benefit-card reveal">
+              <div class="icon" aria-hidden="true">🛡️</div>
+              <h3>Garantia e confiança</h3>
+              <p>Produtos confiáveis com suporte especializado antes e depois da compra.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="products" id="produtos">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Produtos em destaque</p>
+            <h2>Condição superior para seu carro.</h2>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card reveal" data-name="Kit de Freios dianteiros" data-price="1249">
+              <img
+                src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=800&q=80"
+                alt="Kit de freios dianteiros para automóvel"
+              />
+              <div class="card-body">
+                <span class="tag">Performance</span>
+                <h3>Kit de Freios dianteiros</h3>
+                <p>Discos ventilados e pastilhas de alta aderência para frenagem segura e precisa.</p>
+                <div class="price-row">
+                  <span class="old-price">R$ 1.499</span>
+                  <span class="promo-price">R$ 1.249</span>
+                </div>
+                <div class="card-actions">
+                  <button class="btn btn-primary add-to-cart" type="button">Adicionar ao carrinho</button>
+                  <button class="btn btn-secondary buy-now" type="button">Comprar agora</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-name="Suspensão esportiva" data-price="899">
+              <img
+                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80"
+                alt="Suspensão esportiva para veículo"
+              />
+              <div class="card-body">
+                <span class="tag">Estilo</span>
+                <h3>Suspensão esportiva</h3>
+                <p>Maior estabilidade e resposta esportiva para curvas e rodovias com conforto.</p>
+                <div class="price-row">
+                  <span class="old-price">R$ 1.099</span>
+                  <span class="promo-price">R$ 899</span>
+                </div>
+                <div class="card-actions">
+                  <button class="btn btn-primary add-to-cart" type="button">Adicionar ao carrinho</button>
+                  <button class="btn btn-secondary buy-now" type="button">Comprar agora</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-name="Farol LED premium" data-price="649">
+              <img
+                src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=800&q=80"
+                alt="Farol LED premium automotivo"
+              />
+              <div class="card-body">
+                <span class="tag">Iluminação</span>
+                <h3>Farol LED premium</h3>
+                <p>Visibilidade superior, design elegante e consumo eficiente para sua noite.</p>
+                <div class="price-row">
+                  <span class="old-price">R$ 799</span>
+                  <span class="promo-price">R$ 649</span>
+                </div>
+                <div class="card-actions">
+                  <button class="btn btn-primary add-to-cart" type="button">Adicionar ao carrinho</button>
+                  <button class="btn btn-secondary buy-now" type="button">Comprar agora</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-name="Pneu all season" data-price="529">
+              <img
+                src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80"
+                alt="Pneu all season para automóvel"
+              />
+              <div class="card-body">
+                <span class="tag">Segurança</span>
+                <h3>Pneu all season</h3>
+                <p>Tração confiável em diferentes condições climáticas com duração aprimorada.</p>
+                <div class="price-row">
+                  <span class="old-price">R$ 699</span>
+                  <span class="promo-price">R$ 529</span>
+                </div>
+                <div class="card-actions">
+                  <button class="btn btn-primary add-to-cart" type="button">Adicionar ao carrinho</button>
+                  <button class="btn btn-secondary buy-now" type="button">Comprar agora</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-name="Bateria 12V premium" data-price="719">
+              <img
+                src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=800&q=80"
+                alt="Bateria automotiva premium de alta performance"
+              />
+              <div class="card-body">
+                <span class="tag">Energia</span>
+                <h3>Bateria 12V premium</h3>
+                <p>Partida confiável, maior resistência e excelente performance em qualquer viagem.</p>
+                <div class="price-row">
+                  <span class="old-price">R$ 899</span>
+                  <span class="promo-price">R$ 719</span>
+                </div>
+                <div class="card-actions">
+                  <button class="btn btn-primary add-to-cart" type="button">Adicionar ao carrinho</button>
+                  <button class="btn btn-secondary buy-now" type="button">Comprar agora</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-name="Sistema de som premium" data-price="1099">
+              <img
+                src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80"
+                alt="Sistema de som automotivo premium"
+              />
+              <div class="card-body">
+                <span class="tag">Áudio</span>
+                <h3>Sistema de som premium</h3>
+                <p>Som imersivo com potência e clareza para cada faixa e cada rota.</p>
+                <div class="price-row">
+                  <span class="old-price">R$ 1.399</span>
+                  <span class="promo-price">R$ 1.099</span>
+                </div>
+                <div class="card-actions">
+                  <button class="btn btn-primary add-to-cart" type="button">Adicionar ao carrinho</button>
+                  <button class="btn btn-secondary buy-now" type="button">Comprar agora</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="servicos">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Serviços especializados</p>
+            <h2>Manutenção feita para manter seu carro em perfeito estado.</h2>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">🔧</div>
+              <h3>Alinhamento</h3>
+              <p>Precisão para desgaste uniforme dos pneus e direção estável.</p>
+              <button class="btn btn-primary service-button" type="button" data-service="Alinhamento">Solicitar serviço</button>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">⚙️</div>
+              <h3>Balanceamento</h3>
+              <p>Redução de vibrações e melhor conforto ao dirigir.</p>
+              <button class="btn btn-primary service-button" type="button" data-service="Balanceamento">Solicitar serviço</button>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">🛞</div>
+              <h3>Troca de pneus</h3>
+              <p>Segurança e aderência com orientação especializada.</p>
+              <button class="btn btn-primary service-button" type="button" data-service="Troca de pneus">Solicitar serviço</button>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">🛢️</div>
+              <h3>Troca de óleo</h3>
+              <p>Proteção para motor com lubrificação ideal e desempenho.</p>
+              <button class="btn btn-primary service-button" type="button" data-service="Troca de óleo">Solicitar serviço</button>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">🧰</div>
+              <h3>Revisões em geral</h3>
+              <p>Diagnóstico completo para evitar falhas e garantir confiabilidade.</p>
+              <button class="btn btn-primary service-button" type="button" data-service="Revisão geral">Solicitar serviço</button>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">🚘</div>
+              <h3>Diagnóstico eletrônico</h3>
+              <p>Identificação precisa de falhas e soluções rápidas.</p>
+              <button class="btn btn-primary service-button" type="button" data-service="Diagnóstico eletrônico">Solicitar serviço</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="empresa">
+        <div class="container about-content">
+          <div class="about-media reveal">
+            <img
+              src="imagens/quem_somos.jpg" alt="quem somos"
+              alt="Oficina mecânica premium com automóvel em manutenção"
+            />
+          </div>
+
+          <div class="about-copy reveal">
+            <p class="eyebrow">Sobre a Mercado Auto</p>
+            <h2>Mais de 4 anos em Franca entregando confiança e qualidade automotiva.</h2>
+            <p>
+              A Mercado Auto peças nasceu para atender quem valoriza desempenho, oferecer preço justo,
+              serviço de qualidade e atendimento que resolve segurança e
+              bom gosto. Somos uma loja especializada em peças, acessórios e serviços para
+              veículos.
+            </p>
+            <p>
+                Aqui, cada cliente é tratado como parte da nossa história, seja o mecânico que precisa de agilidade,
+                o motorista que busca confiança, ou a família que quer rodar tranquila pelas estradas.
+                Nossa equipe combina tecnologia, atendimento personalizado e produtos de
+                excelência para entregar uma experiência premium em cada etapa da compra.
+            </p>
+            <p>
+                Esse é o Mercado: de portas abertas, com o cuidado de quem entende e a confiança de quem está sempre ao seu lado.
+                Vem pra cá! 👇
+                <br>
+                Loja 1: Praça Primeiro de Maio 02V - Vila Chico Júlio, Franca - SP
+                <br>
+                Loja 2: Avenida Brasil 1933 - Vila Aparecida Franca
+            </p>
+            <ul class="about-list">
+              <li>Atendimento especializado, com foco no cliente.</li>
+              <li>Produtos com qualidade comprovada e garantia.</li>
+              <li>Estratégia de compra rápida e segura pelo WhatsApp.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-banner reveal">
+        <div class="container cta-inner">
+          <div>
+            <p class="eyebrow">Seu carro merece mais</p>
+            <h2>Compre agora com a melhor solução para seu veículo.</h2>
+          </div>
+          <button class="btn btn-primary" type="button" data-open-modal="true">Solicitar orçamento</button>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Dúvidas frequentes</p>
+            <h2>Respostas rápidas para facilitar sua compra.</h2>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                Qual o prazo de entrega?
+              </button>
+              <div class="faq-answer">
+                <p>Trabalhamos com entrega rápida em áreas da nossa cidade.</p>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                Os produtos possuem garantia?
+              </button>
+              <div class="faq-answer">
+                <p>Sim. A maioria dos itens conta com garantia oficial do fabricante e suporte da loja.</p>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                Posso solicitar um orçamento para serviços?
+              </button>
+              <div class="faq-answer">
+                <p>Claro. Basta falar pelo WhatsApp e nossa equipe montará a melhor solução para o seu veículo.</p>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                Tenho que pagar antecipado?
+              </button>
+              <div class="faq-answer">
+                <p>Podemos orientar o melhor fluxo de pagamento conforme o produto e a disponibilidade.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter reveal" aria-label="Newsletter">
+        <div class="container newsletter-inner">
+          <div>
+            <p class="eyebrow">Newsletter</p>
+            <h2>Receba ofertas exclusivas e dicas automotivas.</h2>
+          </div>
+          <form class="newsletter-form" novalidate>
+            <label class="sr-only" for="newsletter-email">Seu e-mail</label>
+            <input id="newsletter-email" name="newsletter-email" type="email" placeholder="Seu melhor e-mail" required />
+            <button class="btn btn-primary" type="submit">Quero receber</button>
+            <p class="newsletter-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="contact" id="contato">
+        <div class="container contact-grid">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">Entre em contato</p>
+            <h2>Solicite um orçamento ou tire suas dúvidas.</h2>
+            <p>Atendimento rápido, consultoria especializada e soluções pensadas para seu carro.</p>
+            <ul class="contact-list">
+              <li><strong>WhatsApp:</strong>  (16) 3702-4131</li>
+              <li><strong>Instagram:</strong> https://www.instagram.com/mercado.autopecas/</li>
+              <li><strong>Endereço:</strong>  Praça Primeiro de Maio 02V - Vila Chico Julio, Franca - SP</li>
+              <li><strong>Endereço Auto center:</strong>   Av. Brasil, 1933 - Vila Aparecida, Franca - SP</li>
+            </ul>
+          </div>
+
+          <form class="contact-form reveal" novalidate>
+            <div class="field-group">
+              <label for="name">Nome</label>
+              <input id="name" name="name" type="text" placeholder="Seu nome" required />
+            </div>
+            <div class="field-group">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" placeholder="seu@email.com" required />
+            </div>
+            <div class="field-group">
+              <label for="phone">Telefone</label>
+              <input id="phone" name="phone" type="tel" placeholder="(11) 99999-9999" required />
+            </div>
+            <div class="field-group">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" rows="4" placeholder="Descreva o produto ou serviço desejado" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a href="#top" class="brand" aria-label="Mercado Auto início">
+            <span class="brand-mark">M</span>
+            <span>Mercado Auto peças e acessorios 
+            </span>
+          </a>
+          <p>Peças, acessórios e serviços automotivos com qualidade.</p>
+        </div>
+
+        <div>
+          <h3>Mapa do site</h3>
+          <ul>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#empresa">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Redes sociais</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/mercado.autopecas/" target="_blank" rel="noreferrer">Instagram</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=551637024131&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noreferrer">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 Mercado Auto Peças e Acessórios. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      class="whatsapp-float"
+      href="https://api.whatsapp.com/send/?phone=551637024131&text&type=phone_number&app_absent=0&utm_source=ig"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Falar no WhatsApp"
+    >
+      WhatsApp
+    </a>
+
+    <aside class="cart-drawer" aria-label="Carrinho de compras" aria-hidden="true">
+      <div class="cart-header">
+        <h3>Carrinho</h3>
+        <button class="cart-close" type="button" aria-label="Fechar carrinho">×</button>
+      </div>
+      <div class="cart-items" aria-live="polite">
+        <p class="empty-cart">Seu carrinho está vazio.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <strong class="total-price">R$ 0,00</strong>
+        </div>
+        <button class="btn btn-primary finish-order" type="button">Finalizar pedido</button>
+      </div>
+    </aside>
+
+    <div class="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal="true"></div>
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Fechar modal">×</button>
+        <p class="eyebrow">Oferta exclusiva</p>
+        <h3 id="modal-title">Receba 10% de desconto na sua primeira compra.</h3>
+        <form class="modal-form" novalidate>
+          <label for="modal-name">Nome</label>
+          <input id="modal-name" name="modal-name" type="text" placeholder="Seu nome" required />
+          <label for="modal-email">E-mail</label>
+          <input id="modal-email" name="modal-email" type="email" placeholder="seu@email.com" required />
+          <button class="btn btn-primary" type="submit">Garantir desconto</button>
+          <p class="modal-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
