@@ -29,7 +29,6 @@ lugar que chame a atencão: " PREÇO JUSTO E SERVIÇO DE QUALIDADE"
 O site deve conter um direcionamento ao watsap com os contatos do
 vendedores para que o cliente possa ser direcionado ao vendedor que ele quer
 ser atendido. 
-Crie as pastas necessarias para o projeto. 
 Siga somente o que foi pedido nos requisitos
 não faça nada a mais
 sem emojis
