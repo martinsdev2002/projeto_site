@@ -96,6 +96,14 @@ button {
   letter-spacing: 0.04em;
 }
 
+.brand-logo {
+  flex: 0 0 2.2rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 0.65rem;
+  object-fit: cover;
+}
+
 .brand-mark {
   display: inline-grid;
   place-items: center;
@@ -957,10 +965,6 @@ button {
     display: grid;
   }
 
-  .brand-logo {
-    width: clamp(110px, 20vw, 180px);
-  }
-
   .trust-grid,
   .benefit-grid,
   .service-grid,
@@ -1011,10 +1015,6 @@ button {
   .header-inner {
     min-height: 54px;
     gap: 0.4rem;
-  }
-
-  .brand-logo {
-    width: 110px;
   }
 
   .cart-button {

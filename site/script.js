@@ -27,6 +27,15 @@ function formatCurrency(value) {
   }).format(value);
 }
 
+function parseCurrency(value) {
+  return Number(
+    value
+      .replace(/[^\d,.-]/g, '')
+      .replace(/\./g, '')
+      .replace(',', '.')
+  );
+}
+
 function openCart() {
   if (!cartDrawer) return;
   cartDrawer.classList.add('is-open');
@@ -166,7 +175,8 @@ document.querySelectorAll('.add-to-cart').forEach((button) => {
   button.addEventListener('click', () => {
     const card = button.closest('.product-card');
     const name = card.dataset.name;
-    const price = Number(card.dataset.price);
+    const priceElement = card.querySelector('.promo-price');
+    const price = parseCurrency(priceElement.textContent);
     addToCart(name, price);
   });
 });
