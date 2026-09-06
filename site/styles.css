@@ -775,6 +775,70 @@ button {
   color: var(--muted);
 }
 
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--text) !important;
+  font-weight: 800;
+}
+
+.sponsors {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 2.5rem 0;
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.sponsors-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.sponsors-heading .eyebrow {
+  margin-bottom: 0;
+}
+
+.sponsors-heading h2 {
+  margin: 0;
+  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+  line-height: 1.2;
+}
+
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.sponsor-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 4.25rem;
+  padding: 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  color: var(--muted);
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.sponsor-logo img {
+  width: 100%;
+  max-width: 10rem;
+  height: 3rem;
+  object-fit: contain;
+}
+
+.sponsor-logo:hover {
+  border-color: rgba(247, 201, 72, 0.5);
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
 .footer-bottom {
   border-top: 1px solid var(--line);
   padding: 1rem 0;
@@ -999,6 +1063,10 @@ button {
     align-items: stretch;
   }
 
+  .sponsor-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .hero-metrics {
     gap: 1rem 2rem;
   }
@@ -1031,6 +1099,18 @@ button {
   .cta-inner {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .sponsors-heading {
+    display: block;
+  }
+
+  .sponsors-heading h2 {
+    margin-top: 0.5rem;
+  }
+
+  .sponsor-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .hero-actions .btn,

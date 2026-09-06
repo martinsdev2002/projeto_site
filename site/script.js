@@ -17,6 +17,7 @@ const modalForm = document.querySelector('.modal-form');
 const modalTriggerButtons = document.querySelectorAll('[data-open-modal="true"]');
 const revealItems = document.querySelectorAll('.reveal');
 const faqItems = document.querySelectorAll('.faq-item');
+const whatsappNumber = '551637024131';
 
 let cart = [];
 
@@ -94,7 +95,7 @@ function removeFromCart(name) {
 }
 
 function sendToWhatsApp(message) {
-  const url = `https://wa.me/5511999999999?text=${encodeURIComponent(message)}`;
+  const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
   window.open(url, '_blank', 'noopener');
 }
 
@@ -127,6 +128,7 @@ function closeModal() {
 
 if (cartButton) {
   cartButton.addEventListener('click', () => {
+    if (!cartDrawer) return;
     const isOpen = cartDrawer.classList.contains('is-open');
     if (isOpen) {
       closeCart();
@@ -151,25 +153,31 @@ document.addEventListener('click', (event) => {
   }
 });
 
-document.querySelector('.finish-order').addEventListener('click', () => {
-  if (!cart.length) {
-    showFormStatus(document.querySelector('.form-status'), 'Seu carrinho está vazio. Adicione ao menos um item.', true);
-    openCart();
-    return;
-  }
+const finishOrderButton = document.querySelector('.finish-order');
 
-  const summary = cart
-    .map((item) => `${item.quantity}x ${item.name}`)
-    .join(', ');
-  const total = formatCurrency(cart.reduce((sum, item) => sum + item.price * item.quantity, 0));
-  sendToWhatsApp(`Olá! Gostaria de finalizar o pedido com: ${summary}. Total estimado: ${total}.`);
-});
+if (finishOrderButton) {
+  finishOrderButton.addEventListener('click', () => {
+    if (!cart.length) {
+      showFormStatus(document.querySelector('.form-status'), 'Seu carrinho está vazio. Adicione ao menos um item.', true);
+      openCart();
+      return;
+    }
 
-cartItemsContainer.addEventListener('click', (event) => {
-  const button = event.target.closest('[data-remove-name]');
-  if (!button) return;
-  removeFromCart(button.dataset.removeName);
-});
+    const summary = cart
+      .map((item) => `${item.quantity}x ${item.name}`)
+      .join(', ');
+    const total = formatCurrency(cart.reduce((sum, item) => sum + item.price * item.quantity, 0));
+    sendToWhatsApp(`Olá! Gostaria de finalizar o pedido com: ${summary}. Total estimado: ${total}.`);
+  });
+}
+
+if (cartItemsContainer) {
+  cartItemsContainer.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-remove-name]');
+    if (!button) return;
+    removeFromCart(button.dataset.removeName);
+  });
+}
 
 document.querySelectorAll('.add-to-cart').forEach((button) => {
   button.addEventListener('click', () => {
@@ -196,17 +204,19 @@ document.querySelectorAll('.service-button').forEach((button) => {
   });
 });
 
-navToggle.addEventListener('click', () => {
-  const isOpen = mainNav.classList.toggle('is-open');
-  navToggle.setAttribute('aria-expanded', String(isOpen));
-});
-
-mainNav.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => {
-    mainNav.classList.remove('is-open');
-    navToggle.setAttribute('aria-expanded', 'false');
+if (navToggle && mainNav) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
   });
-});
+
+  mainNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
 
 faqItems.forEach((item) => {
   const button = item.querySelector('.faq-question');
@@ -231,7 +241,7 @@ faqItems.forEach((item) => {
   });
 });
 
-newsletterForm.addEventListener('submit', (event) => {
+if (newsletterForm) newsletterForm.addEventListener('submit', (event) => {
   event.preventDefault();
   const emailInput = newsletterForm.querySelector('input[type="email"]');
 
@@ -243,11 +253,9 @@ newsletterForm.addEventListener('submit', (event) => {
 
   showFormStatus(newsletterStatus, 'E-mail cadastrado com sucesso!');
   newsletterForm.reset();
-  closeCart();
-  openModal();
 });
 
-contactForm.addEventListener('submit', (event) => {
+if (contactForm) contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
   const fields = contactForm.querySelectorAll('input, textarea');
   let isValid = true;
@@ -272,7 +280,7 @@ contactForm.addEventListener('submit', (event) => {
   contactForm.reset();
 });
 
-modalForm.addEventListener('submit', (event) => {
+if (modalForm) modalForm.addEventListener('submit', (event) => {
   event.preventDefault();
   const nameInput = document.getElementById('modal-name');
   const emailInput = document.getElementById('modal-email');
