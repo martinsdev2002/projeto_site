@@ -50,6 +50,8 @@ function closeCart() {
 }
 
 function updateCartUI() {
+  if (!cartCount || !cartItemsContainer || !totalPrice) return;
+
   cartCount.textContent = String(cart.reduce((sum, item) => sum + item.quantity, 0));
 
   if (!cart.length) {
@@ -319,17 +321,22 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  },
-  { threshold: 0.14 }
-);
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(
+    (entries, currentObserver) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          currentObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.14, rootMargin: '0px 0px 120px' }
+  );
 
-revealItems.forEach((item) => observer.observe(item));
+  revealItems.forEach((item) => observer.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add('visible'));
+}
 
 updateCartUI();
